@@ -1,0 +1,86 @@
+.horizontal-flexbox {
+    display: flex;
+    flex-direction: row;
+
+}
+
+.vertical-flexbox {
+    display: flex;
+    flex-direction: column;
+}
+
+#posicionActual {
+    justify-content: space-around;
+    margin: 0px;
+    background-color: steelblue;
+    border: 1px solid black;
+    height: 50px;
+}
+
+#resumen_texto {
+    align-items: flex-end;
+    margin-left: 40px;
+    margin-bottom: 20px;
+}
+
+#resumen {
+    gap: 2px;
+}
+
+h3 {
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: medium;
+    margin: 15px;
+    height: 23.2px;
+}
+
+#tituloMapa {
+    margin-top: 15px;
+}
+
+p {
+    margin: 2px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#contenido-resumen {
+    background-color: steelblue;
+    border: 1px solid black;
+}
+
+.texto_resumen {
+    font-size: 12px;
+}
+
+#principal {
+    justify-content: space-evenly;
+}
+
+body {
+    margin: 3%;
+    background-color: lightblue;
+}
+
+h1 {
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: large;
+    margin: 30px;
+    margin-top: 0px;
+}
+
+#explicacion {
+    font-size: 14;
+    text-align: justify;
+    margin: 10px;
+    margin-top: 15px;
+}
+
+#paisActual {
+    margin-top: 15px;
+}
+
+#continenteActual {
+    margin-top: 15px;
+}

@@ -1,0 +1,50 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <script src="https://d3js.org/d3.v7.min.js"></script>
+        <link rel="stylesheet" href="style.css" type="text/css">
+        <title>Progreso de vacunación COVID-19</title>
+    </head>
+    <body>
+        <h1>Progreso de vacunación COVID-19 alrededor del mundo</h1>
+        <div class="horizontal-flexbox" id="principal">
+            <div class="vertical-flexbox">
+                <div class="vertical-flexbox">
+                    <h3 id="tituloMapa">Mapa del mundo</h3>
+                    <svg id="WorldMap"></svg>
+                    <div id="contenido-resumen">
+                        <h3>Resumen del país</h2>
+                        <div class="horizontal-flexbox" id="resumen">
+                            <div class="vertical-flexbox" id="resumen_texto">
+                                <p class="texto_resumen">Población estimada: </p>
+                                <p class="texto_resumen">Cantidad de personas vacunadas: </p>
+                                <p class="texto_resumen">Porcentaje de población vacunada: </p>
+                                <p class="texto_resumen">Cantidad de personas totalmente vacunadas: </p>
+                                <p class="texto_resumen">Porcentaje de población totalmente vacunada: </p>
+                            </div>
+                            <div class="vertical-flexbox">
+                                <p class="texto_resumen" id="resumen_poblacion"></p>
+                                <p class="texto_resumen" id="resumen_vacunacion"></p>
+                                <p class="texto_resumen" id="resumen_porcentaje_vacunacion"></p>
+                                <p class="texto_resumen" id="resumen_vacunacion_total"></p>
+                                <p class="texto_resumen" id="resumen_porcentaje_vacunacion_total"></p>
+                            </div>
+                        </div>
+                    </div>   
+                </div>
+            </div>
+            <div class="vertical-flexbox">
+                <div class="horizontal-flexbox" id="posicionActual">
+                    <p id="continenteActual">Continente actual:</p>
+                    <p id="paisActual">País actual:</p>     
+                </div>
+                <div class="horizontal-flexbox">
+                    <svg id="paisSeleccionado"></svg>
+                    <svg id="vacunacion100"></svg>
+                </div>
+                <p id="explicacion">En la presente herramienta de visualización se podrá explorar como ha sido el proceso de vacunación alrededor del mundo, detallando para cada país las características propias de este proceso. La interacción de la herramienta ocurre principalmente desde el mapa. Es posible realizar acciones de zoom y desplazarse a través de él, mediante el mouse. Al colocar el mouse sobre algún país quedará destacado y se indicará el nombre en la esquina superior izquierda. Luego, es posible hacer "click" sobre un país para seleccionarlo, de esta manera quedará destacado con un color más intenso y se desplegaran visualizaciones con la trayectoria de vacunación del país a través del tiempo. Así como, un resumen con la población estimada del país y los valores más recientes para: la cantidad de personas vacunadas, el porcentaje de personas vacunadas, la cantidad de personas totalmente vacunadas (ambas dosis) y el procentaje de personas totalmente vacunadas.</p>
+            </div>
+        </div>
+        <script src="index.js"></script>
+    </body>
+</html>
